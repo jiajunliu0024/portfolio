@@ -19,13 +19,13 @@ export default function Navbar() {
           <a href="#skills" className="mr-5 hover:text-white text-gray-400 bg-gray-800">
             Skills
           </a>
-          <a href="#testimonials" className="mr-5 hover:text-whit text-gray-400 bg-gray-800">
-            Testimonials
+          <a href="#experience" className="mr-5 hover:text-white text-gray-400 bg-gray-800">
+            Experience
           </a>
         </nav>
         <a
           href="#contact"
-          className="inline-flex items-center   text-gray-400 bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
+          className="inline-flex items-center hover:text-white text-gray-400 bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
           Hire Me
        <ArrowRightIcon className="w-4 h-4 ml-1" />
         </a>
