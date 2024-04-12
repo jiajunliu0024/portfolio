@@ -1,11 +1,10 @@
 export const projects = [
     {
-      title: "React Reserve",
-      subtitle: "MERN Stack",
+      title: "React Resume",
+      subtitle: "React and AI",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "public/project-1.gif",
-      link: "https://reactbootcamp.com",
+        "It was a resume editor which provides AI modification service",
+      image: "./project-1.gif",
     },
     {
       title: "React Tracks",
@@ -13,23 +12,21 @@ export const projects = [
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
       image: "./project-2.gif",
-      link: "https://reactbootcamp.com",
+
     },
     {
       title: "DevChat",
-      subtitle: "React and Firebase",
+      subtitle: "Nodejs and Firebase",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+        "Use React and FireBase to create an online ",
       image: "./project-3.gif",
-      link: "https://reactbootcamp.com",
     },
     {
       title: "Epic Todo App",
       subtitle: "React Hooks",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+        "An easy to-do app to track every day tasks",
       image: "./project-4.gif",
-      link: "https://reactbootcamp.com",
     },
   ];
   

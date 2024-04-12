@@ -35,9 +35,6 @@ export default function Contact() {
             height="100%"
             title="map"
             className="absolute inset-0"
-            frameBorder={0}
-            marginHeight={0}
-            marginWidth={0}
             style={{ filter: "opacity(0.7)" }}
             src="https://www.google.com/maps/embed/v1/place?q=97+warren+st+new+york+city&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
           />
@@ -46,7 +43,7 @@ export default function Contact() {
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 ADDRESS
               </h2>
-              <p className="mt-1">
+              <p className=" text-indigo-400 mt-1">
                 Melbourne <br />
                 VIC 3000, Australia
               </p>
@@ -55,13 +52,13 @@ export default function Contact() {
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 EMAIL
               </h2>
-              <a className="text-indigo-400 leading-relaxed">
+              <p className="text-indigo-400 leading-relaxed">
                 jiajunliu0024@gmail.com
-              </a>
+              </p>
               <h2 className="title-font font-semibold text-white tracking-widest text-xs mt-4">
                 PHONE
               </h2>
-              <p className="leading-relaxed">0485875427</p>
+              <p className="text-indigo-400 leading-relaxed">0452 590 768</p>
             </div>
           </div>
         </div>
