@@ -4,15 +4,16 @@ import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
-import Typography from "@mui/material/Typography";
+import TimelineOppositeContent, {
+  timelineOppositeContentClasses,
+} from "@mui/lab/TimelineOppositeContent";
 import ExperienceCard from "./ExperienceCard.js";
 import { educations, jobs } from "../data";
 
 export default function CustomizedTimeline() {
   const educationTimelineItem = educations.map((education) => (
-    <TimelineItem>
+    <TimelineItem className="mr-20">
       <TimelineOppositeContent
         className="text-white"
         sx={{ m: "auto 0" }}
@@ -32,6 +33,27 @@ export default function CustomizedTimeline() {
     </TimelineItem>
   ));
   const jobTimeLineItem = jobs.map((job) => (
+    <TimelineItem className="mr-20">
+      <TimelineOppositeContent
+        className="text-white"
+        sx={{ m: "auto 0" }}
+        align="right"
+        variant="h6"
+      >
+        {job.period}
+      </TimelineOppositeContent>
+      <TimelineSeparator>
+        <TimelineConnector />
+        <TimelineDot></TimelineDot>
+        <TimelineConnector />
+      </TimelineSeparator>
+      <TimelineContent sx={{ py: "12px", px: 2 }}>
+        <ExperienceCard education={job}></ExperienceCard>
+      </TimelineContent>
+    </TimelineItem>
+  ));
+
+  const detailTimelineItem = jobs.map((job) => (
     <TimelineItem>
       <TimelineOppositeContent
         className="text-white"
@@ -53,7 +75,13 @@ export default function CustomizedTimeline() {
   ));
 
   return (
-    <Timeline>
+    <Timeline
+      sx={{
+        [`& .${timelineOppositeContentClasses.root}`]: {
+          flex: 0.2,
+        },
+      }}
+    >
       {educationTimelineItem} ,{jobTimeLineItem}
     </Timeline>
   );

@@ -10,6 +10,24 @@ export default function ExperienceCard({ education }) {
 
   return (
     <Card sx={{ display: "flex" }}>
+      <Box
+        height={200}
+        width={300}
+        sx={{ display: "flex", flexDirection: "column" }}
+      >
+        <CardContent sx={{ flex: "1 0 auto" }}>
+          <Typography component="div" variant="h5">
+            {education.name}
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            color="text.secondary"
+            component="div"
+          >
+            {education.major}
+          </Typography>
+        </CardContent>
+      </Box>
       <Box className="w-80" sx={{ display: "flex", flexDirection: "column" }}>
         <CardContent sx={{ flex: "1 0 auto" }}>
           <Typography component="div" variant="h5">
@@ -26,11 +44,7 @@ export default function ExperienceCard({ education }) {
       </Box>
       <Box sx={{ display: "flex", flexDirection: "column" }}>
         <CardContent sx={{ flex: "1 0 auto" }}>
-          <img
-            alt="hero"
-            src={education.image}
-            className="scroll-ml-5 w-120 h-20"
-          />
+          <img alt="hero" src={education.image} className="mr-0 w-120 h-20" />
         </CardContent>
       </Box>
     </Card>

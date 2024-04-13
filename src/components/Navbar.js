@@ -4,6 +4,15 @@ import { ArrowRightIcon } from "@heroicons/react/solid";
 import React from "react";
 
 export default function Navbar() {
+  const downloadResume = () => {
+    const pdfUrl = "./Jiajun_resume_IT.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "Jiajun_resume.pdf"; // specify the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <header className="bg-gray-800 md:sticky top-0 z-10">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
@@ -33,6 +42,7 @@ export default function Navbar() {
           </a>
           <a
             href="#resume"
+            onClick={downloadResume}
             className="mr-5 hover:text-white text-gray-400 bg-gray-800"
           >
             Resume
