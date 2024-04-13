@@ -7,97 +7,54 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import Typography from "@mui/material/Typography";
+import ExperienceCard from "./ExperienceCard.js";
+import { educations, jobs } from "../data";
 
 export default function CustomizedTimeline() {
+  const educationTimelineItem = educations.map((education) => (
+    <TimelineItem>
+      <TimelineOppositeContent
+        className="text-white"
+        sx={{ m: "auto 0" }}
+        align="right"
+        variant="h6"
+      >
+        {education.period}
+      </TimelineOppositeContent>
+      <TimelineSeparator>
+        <TimelineConnector />
+        <TimelineDot></TimelineDot>
+        <TimelineConnector />
+      </TimelineSeparator>
+      <TimelineContent sx={{ py: "12px", px: 2 }}>
+        <ExperienceCard education={education}></ExperienceCard>
+      </TimelineContent>
+    </TimelineItem>
+  ));
+  const jobTimeLineItem = jobs.map((job) => (
+    <TimelineItem>
+      <TimelineOppositeContent
+        className="text-white"
+        sx={{ m: "auto 0" }}
+        align="right"
+        variant="h6"
+      >
+        {job.period}
+      </TimelineOppositeContent>
+      <TimelineSeparator>
+        <TimelineConnector />
+        <TimelineDot></TimelineDot>
+        <TimelineConnector />
+      </TimelineSeparator>
+      <TimelineContent sx={{ py: "12px", px: 2 }}>
+        <ExperienceCard education={job}></ExperienceCard>
+      </TimelineContent>
+    </TimelineItem>
+  ));
+
   return (
     <Timeline>
-      <TimelineItem>
-        <TimelineOppositeContent
-          className="text-white"
-          sx={{ m: "auto 0" }}
-          align="right"
-          variant="h6"
-        >
-          2017-2020
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineConnector />
-          <TimelineDot></TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent sx={{ py: "12px", px: 2 }}>
-          <Typography className="text-white" variant="h6" component="span">
-            Bacholer of Computer Scinece
-          </Typography>
-          <img className="w-1/2 " alt="hero" src="./monash.png" />
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineOppositeContent
-          className="text-white"
-          sx={{ m: "auto 0" }}
-          align="right"
-          variant="h6"
-        >
-          2020-2022
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineConnector />
-          <TimelineDot></TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent sx={{ py: "12px", px: 2 }}>
-          <Typography className="text-white" variant="h6" component="span">
-            Bacholer of Computer Scinece
-          </Typography>
-          <img className="w-1/2 " alt="hero" src="./monash.png" />
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineOppositeContent
-          sx={{ m: "auto 0" }}
-          variant="body2"
-          color="text.secondary"
-        >
-          10:00 am
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineConnector />
-          <TimelineDot color="primary"></TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent sx={{ py: "12px", px: 2 }}>
-          <Typography variant="h6" component="span">
-            2020-2022
-          </Typography>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineConnector />
-          <TimelineDot color="primary" variant="outlined"></TimelineDot>
-          <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
-        </TimelineSeparator>
-        <TimelineContent sx={{ py: "12px", px: 2 }}>
-          <Typography variant="h6" component="span">
-            Sleep
-          </Typography>
-          <Typography>Because you need rest</Typography>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
-          <TimelineDot color="secondary"></TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent sx={{ py: "12px", px: 2 }}>
-          <Typography variant="h6" component="span">
-            Repeat
-          </Typography>
-          <Typography>Because this is the life you love!</Typography>
-        </TimelineContent>
-      </TimelineItem>
+      {educationTimelineItem} ,{jobTimeLineItem}
     </Timeline>
   );
 }
