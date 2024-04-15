@@ -13,7 +13,7 @@ import { educations, jobs } from "../data";
 
 export default function CustomizedTimeline() {
   const educationTimelineItem = educations.map((education) => (
-    <TimelineItem className="mr-20">
+    <TimelineItem className="mr-60">
       <TimelineOppositeContent
         className="text-white"
         sx={{ m: "auto 0" }}
@@ -33,7 +33,7 @@ export default function CustomizedTimeline() {
     </TimelineItem>
   ));
   const jobTimeLineItem = jobs.map((job) => (
-    <TimelineItem className="mr-20">
+    <TimelineItem className="mr-60">
       <TimelineOppositeContent
         className="text-white"
         sx={{ m: "auto 0" }}

@@ -7,10 +7,9 @@ export const projects = [
     image: "./project-1.gif",
   },
   {
-    title: "React Tracks",
-    subtitle: "React and Python",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    title: "React Recipe",
+    subtitle: "React and JAVA",
+    description: "Use java and react to build a personal recipe app",
     image: "./project-2.gif",
   },
   {
@@ -47,9 +46,9 @@ export const testimonials = [
 export const skills = [
   "JavaScript",
   "React",
-  "Next.js",
+  "Java",
   "Node",
-  "GraphQL",
+  "SQL",
   "Material UI",
 ];
 
@@ -59,12 +58,20 @@ export const educations = [
     name: "Monash University",
     major: "Advanced Computer Science",
     image: "./monash.png",
+    detail: {
+      desc: "The courses I learned from Monash Uni",
+      subjects: [],
+    },
   },
   {
     period: "2020-2022",
     name: "University of Melbourne",
     major: "Artifical Intelligence",
     image: "./unimelb.jpg",
+    detail: {
+      desc: "The courses I learned from Melb Uni",
+      subjects: [],
+    },
   },
 ];
 
@@ -74,11 +81,19 @@ export const jobs = [
     name: "Huawei",
     major: "Software Developer",
     image: "./huawei.jpg",
+    detail: {
+      desc: "The project I was finished in my previous job",
+      subjects: [],
+    },
   },
   {
     period: "2024-Current",
     name: "Monash Professional Year",
     major: "Intership",
     image: "./py.jpg",
+    detail: {
+      desc: "The project I was finished in my previous job",
+      subjects: [],
+    },
   },
 ];
