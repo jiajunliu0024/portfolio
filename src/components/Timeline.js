@@ -9,11 +9,12 @@ import TimelineOppositeContent, {
   timelineOppositeContentClasses,
 } from "@mui/lab/TimelineOppositeContent";
 import ExperienceCard from "./ExperienceCard.js";
+import { Image } from "antd";
 import { educations, jobs } from "../data";
 
 export default function CustomizedTimeline() {
   const educationTimelineItem = educations.map((education) => (
-    <TimelineItem className="mr-60">
+    <TimelineItem key={education.name} className="mr-60">
       <TimelineOppositeContent
         className="text-white"
         sx={{ m: "auto 0" }}
@@ -33,28 +34,7 @@ export default function CustomizedTimeline() {
     </TimelineItem>
   ));
   const jobTimeLineItem = jobs.map((job) => (
-    <TimelineItem className="mr-60">
-      <TimelineOppositeContent
-        className="text-white"
-        sx={{ m: "auto 0" }}
-        align="right"
-        variant="h6"
-      >
-        {job.period}
-      </TimelineOppositeContent>
-      <TimelineSeparator>
-        <TimelineConnector />
-        <TimelineDot></TimelineDot>
-        <TimelineConnector />
-      </TimelineSeparator>
-      <TimelineContent sx={{ py: "12px", px: 2 }}>
-        <ExperienceCard education={job}></ExperienceCard>
-      </TimelineContent>
-    </TimelineItem>
-  ));
-
-  const detailTimelineItem = jobs.map((job) => (
-    <TimelineItem>
+    <TimelineItem key={job.name} className="mr-60">
       <TimelineOppositeContent
         className="text-white"
         sx={{ m: "auto 0" }}

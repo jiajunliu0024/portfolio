@@ -59,8 +59,18 @@ export const educations = [
     major: "Advanced Computer Science",
     image: "./monash.png",
     detail: {
+      type: "Courses",
       desc: "The courses I learned from Monash Uni",
-      subjects: [],
+      subjects: [
+        "Data algorithm",
+        "Operating system",
+        "Object orentation",
+        "Project Management",
+      ],
+      img: {
+        degree: "./monash_degree.jpeg",
+        ahegs: "./monash_hd.jpeg",
+      },
     },
   },
   {
@@ -69,8 +79,18 @@ export const educations = [
     major: "Artifical Intelligence",
     image: "./unimelb.jpg",
     detail: {
+      type: "Courses",
       desc: "The courses I learned from Melb Uni",
-      subjects: [],
+      subjects: [
+        "Machine Learning ",
+        "Cloud Computing",
+        "AI Planning for Autonomy",
+        "Advanced Database Systems",
+      ],
+      img: {
+        degree: "./melb_degree.jpeg",
+        ahegs: "./melb_hd.jpeg",
+      },
     },
   },
 ];
@@ -82,8 +102,21 @@ export const jobs = [
     major: "Software Developer",
     image: "./huawei.jpg",
     detail: {
+      type: "Skills",
       desc: "The project I was finished in my previous job",
-      subjects: [],
+      subjects: [
+        "Java",
+        "ReactJs",
+        "Python",
+        "RabbitMQ",
+        "Springboot",
+        "kubernete",
+        "postgreSQL",
+      ],
+      img: {
+        degree: "./melb_degree.jpeg",
+        ahegs: "./mel_hd.jpeg",
+      },
     },
   },
   {
@@ -92,8 +125,13 @@ export const jobs = [
     major: "Intership",
     image: "./py.jpg",
     detail: {
+      type: "Skills",
       desc: "The project I was finished in my previous job",
-      subjects: [],
+      subjects: ["project management", "intership"],
+      img: {
+        degree: "",
+        ahegs: "",
+      },
     },
   },
 ];
