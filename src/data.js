@@ -114,8 +114,8 @@ export const jobs = [
         "postgreSQL",
       ],
       img: {
-        degree: "./melb_degree.jpeg",
-        ahegs: "./mel_hd.jpeg",
+        degree: "./java.png",
+        ahegs: "./k8s.png",
       },
     },
   },
