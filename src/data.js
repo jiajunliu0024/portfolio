@@ -66,6 +66,9 @@ export const educations = [
         "Operating system",
         "Object orentation",
         "Project Management",
+        "IOS development",
+        "Android application development",
+        "Database",
       ],
       img: {
         degree: "./monash_degree.jpeg",
@@ -86,6 +89,7 @@ export const educations = [
         "Cloud Computing",
         "AI Planning for Autonomy",
         "Advanced Database Systems",
+        "Computer Vision",
       ],
       img: {
         degree: "./melb_degree.jpeg",
