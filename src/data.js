@@ -58,8 +58,17 @@ export const educations = [
     name: "Monash University",
     major: "Advanced Computer Science",
     image: "./monash.png",
+    description: [
+      "Strong knowledge of data structures and algorithms",
+      "Proficient in programming languages such as Java, C++, and Python",
+      "Experience with machine learning and artificial intelligence",
+      "Understanding of computer networks and security",
+      "Familiarity with operating systems and system architecture",
+      "Ability to analyze and optimize code for performance",
+      "Experience with web development and database management",
+    ],
     detail: {
-      type: "Courses",
+      type: "Skills",
       desc: "The courses I learned from Monash Uni",
       subjects: [
         "Data algorithm",
@@ -81,8 +90,17 @@ export const educations = [
     name: "University of Melbourne",
     major: "Artifical Intelligence",
     image: "./unimelb.jpg",
+    description: [
+      "Strong understanding of machine learning algorithms",
+      "Proficient in programming languages such as Python",
+      "Experience with deep learning frameworks such as TensorFlow and PyTorch",
+      "Ability to work with big data and data preprocessing",
+      "Knowledge of natural language processing and computer vision",
+      "Understanding of neural networks and reinforcement learning",
+      "Experience with cloud computing platforms for AI development",
+    ],
     detail: {
-      type: "Courses",
+      type: "Skills",
       desc: "The courses I learned from Melb Uni",
       subjects: [
         "Machine Learning ",
@@ -105,6 +123,15 @@ export const jobs = [
     name: "Huawei",
     major: "Software Developer",
     image: "./huawei.jpg",
+    description: [
+      "Developed precision test platform with SpringBoot",
+      "Used RabbitMQ for message consumption",
+      "Proficient in SQL for database management",
+      "Created predictive model with Deep Neural Networks",
+      "Implemented test automation pipeline, reducing workload by 50%",
+      "Developed front-end with Vue3 and JavaScript",
+      "Deployed in Kubernetes for scalability and reliability",
+    ],
     detail: {
       type: "Skills",
       desc: "The project I was finished in my previous job",
