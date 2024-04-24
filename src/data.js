@@ -1,15 +1,14 @@
 export const projects = [
   {
-    title: "React Resume",
+    title: "Shopping Mall",
     subtitle: "React and AI",
-    description:
-      "It was a resume editor which provides AI modification service",
+    description: "It was an online shopping mall",
     image: "./project-1.gif",
   },
   {
-    title: "React Recipe",
-    subtitle: "React and JAVA",
-    description: "Use java and react to build a personal recipe app",
+    title: "React Music",
+    subtitle: "React and Java",
+    description: "It was a music player created by react",
     image: "./project-2.gif",
   },
   {
