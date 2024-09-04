@@ -10,7 +10,7 @@ import TimelineOppositeContent, {
 } from "@mui/lab/TimelineOppositeContent";
 import ExperienceCard from "./ExperienceCard.js";
 import { Image } from "antd";
-import { educations, jobs } from "../data";
+import { educations, jobs } from "../../data.js";
 
 export default function CustomizedTimeline() {
   const educationTimelineItem = educations.map((education) => (
