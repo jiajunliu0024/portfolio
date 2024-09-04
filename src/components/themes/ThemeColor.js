@@ -1,19 +1,20 @@
 import { createTheme } from "@mui/material/styles";
 
-let theme = createTheme({
-  // Theme customization goes here as usual, including tonalOffset and/or
-  // contrastThreshold as the augmentColor() function relies on these
-});
-
-theme = createTheme(theme, {
-  // Custom colors created with augmentColor go here
+const theme = createTheme({
   palette: {
-    salmon: theme.palette.augmentColor({
-      color: {
-        main: "#FF5733",
-      },
-      name: "salmon",
-    }),
+    lightGrey: "#E9ECEF",
+    primary: {
+      main: "#FF5733",
+      // light: will be calculated from palette.primary.main,
+      // dark: will be calculated from palette.primary.main,
+      // contrastText: will be calculated to contrast with palette.primary.main
+    },
+    grey: {
+      light: "#E9ECEF",
+      main: "#CED4DA",
+      // dark: will be calculated from palette.secondary.main,
+      dark: "#ADB5BD",
+    },
   },
 });
 export default theme;

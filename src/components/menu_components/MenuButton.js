@@ -2,7 +2,7 @@ import * as React from "react";
 import Button from "@mui/material/Button";
 import ClickAwayListener from "@mui/material/ClickAwayListener";
 import Grow from "@mui/material/Grow";
-import Paper from "@mui/material/Paper";
+import Box from "@mui/material/Box";
 import Popper from "@mui/material/Popper";
 import MenuItem from "@mui/material/MenuItem";
 import MenuList from "@mui/material/MenuList";
@@ -39,16 +39,24 @@ export default function MenuListComposition() {
       <div>
         <Button
           ref={anchorRef}
-          className="m-1 px-3 py-2 rounded-xl flex items-center justify-center border border-gray-50 bg-gray-100 hover:bg-gray-200 hover:border-gray-100 active:border-gray-300 gap-x-2 text-gray-700"
-          // id="composition-button"
+          sx={{
+            backgroundColor: "#F8F9FA", // Set background color
+            "&:hover": {
+              backgroundColor: "#E9ECEF", // Hover effect
+            },
+            color: "black",
+            fontSize: "15px",
+          }}
+          // className="m-1 px-3 py-2 rounded-xl flex items-center justify-center border border-gray-500 bg-gray-400 hover:bg-gray-200 hover:border-gray-100 active:border-gray-300 gap-x-2 text-gray-700"
+          id="composition-button"
           aria-controls={open ? "composition-menu" : undefined}
           aria-expanded={open ? "true" : undefined}
           aria-haspopup="true"
           onClick={handleToggle}
         >
           <svg
-            width="15"
-            height="15"
+            width="20"
+            height="20"
             viewBox="0 0 15 15"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -61,13 +69,14 @@ export default function MenuListComposition() {
               clipRule="evenodd"
             />
           </svg>
-          <h1 className="text-grey-700">menu</h1>
+          menu
         </Button>
+
         <Popper
           open={open}
           anchorEl={anchorRef.current}
           role={undefined}
-          placement="bottom-start"
+          placement="bottom-end"
           transition
           disablePortal
         >
@@ -76,10 +85,10 @@ export default function MenuListComposition() {
               {...TransitionProps}
               style={{
                 transformOrigin:
-                  placement === "bottom-start" ? "left top" : "left bottom",
+                  placement === "bottom-end" ? "left top" : "left bottom",
               }}
             >
-              <Paper>
+              <Box>
                 <ClickAwayListener onClickAway={handleClose}>
                   <MenuList
                     autoFocusItem={open}
@@ -90,9 +99,10 @@ export default function MenuListComposition() {
                     <MenuItem onClick={handleClose}>Projects</MenuItem>
                     <MenuItem onClick={handleClose}>Blog</MenuItem>
                     <MenuItem onClick={handleClose}>Contact</MenuItem>
+                    <MenuItem onClick={handleClose}>Download Resume</MenuItem>
                   </MenuList>
                 </ClickAwayListener>
-              </Paper>
+              </Box>
             </Grow>
           )}
         </Popper>
