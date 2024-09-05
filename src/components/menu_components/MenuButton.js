@@ -95,10 +95,18 @@ export default function MenuListComposition() {
                     id="composition-menu"
                     aria-labelledby="composition-button"
                   >
-                    <MenuItem onClick={handleClose}>About</MenuItem>
-                    <MenuItem onClick={handleClose}>Projects</MenuItem>
-                    <MenuItem onClick={handleClose}>Blog</MenuItem>
-                    <MenuItem onClick={handleClose}>Contact</MenuItem>
+                    <MenuItem onClick={handleClose}>
+                      <a href="#about">About</a>
+                    </MenuItem>
+                    <MenuItem onClick={handleClose}>
+                      <a href="#projects">Project</a>
+                    </MenuItem>
+                    <MenuItem onClick={handleClose}>
+                      <a href="#blog">Blog</a>
+                    </MenuItem>
+                    <MenuItem onClick={handleClose}>
+                      <a href="#contact">Contact</a>
+                    </MenuItem>
                     <MenuItem onClick={handleClose}>Download Resume</MenuItem>
                   </MenuList>
                 </ClickAwayListener>
