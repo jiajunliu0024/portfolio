@@ -51,9 +51,9 @@ export const skills = [
   "Material UI",
 ];
 
-export const educations = [
+export const experience = [
   {
-    period: "2017-2020",
+    period: "2017.07-2020.10",
     name: "Monash University",
     major: "Advanced Computer Science",
     image: "./monash.png",
@@ -85,7 +85,7 @@ export const educations = [
     },
   },
   {
-    period: "2020-2022",
+    period: "2020.10-2022.12",
     name: "University of Melbourne",
     major: "Artifical Intelligence",
     image: "./unimelb.jpg",
@@ -114,11 +114,8 @@ export const educations = [
       },
     },
   },
-];
-
-export const jobs = [
   {
-    period: "2022-2024",
+    period: "2022.12-2024.5",
     name: "Huawei",
     major: "Software Developer",
     image: "./huawei.jpg",
@@ -150,10 +147,19 @@ export const jobs = [
     },
   },
   {
-    period: "2024-Current",
-    name: "Monash Professional Year",
-    major: "Intership",
+    period: "2024.6-Current",
+    name: "YepAI",
+    major: "software developer",
     image: "./py.jpg",
+    description: [
+      "Developed precision test platform with SpringBoot",
+      "Used RabbitMQ for message consumption",
+      "Proficient in SQL for database management",
+      "Created predictive model with Deep Neural Networks",
+      "Implemented test automation pipeline, reducing workload by 50%",
+      "Developed front-end with Vue3 and JavaScript",
+      "Deployed in Kubernetes for scalability and reliability",
+    ],
     detail: {
       type: "Skills",
       desc: "The project I was finished in my previous job",
