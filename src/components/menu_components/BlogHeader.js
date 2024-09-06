@@ -10,9 +10,10 @@ export default function BlogHeader() {
         <a className="font-bold text-lg text-black">
           <a href="#about">Wilson Liu</a>
         </a>
-        <div className="w-1/2 hover:w-2/3 flex h-16 items-center">
-          <Marquee className="bg-gray-100 h-8 hover:h-12 rounded-full ">
-            Avaliable for new positiions
+        <div className="w-1/2 flex h-16 items-center">
+        
+          <Marquee className="bg-gray-100 h-10 rounded-full hover:bg-gray-200 hover:h-14 transition-all duration-300 ease-in-out">
+            Available for new positions
           </Marquee>
         </div>
 
