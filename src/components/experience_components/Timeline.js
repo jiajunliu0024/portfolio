@@ -12,6 +12,16 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import { useMediaQuery, useTheme } from "@mui/material";
 
+const detail = (description) => {
+  return (
+    <ul>
+      {description.map((describe) => (
+        <li>{describe}</li>
+      ))}
+    </ul>
+  );
+};
+
 export default function CustomizedTimeline() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
@@ -22,6 +32,7 @@ export default function CustomizedTimeline() {
       sx={{
         display: "flex",
         alignSelf: "center",
+        justifyContent: "flex-start", // Align items to the left
         flexDirection: { xs: "column", sm: "row" }, // Stack items vertically on small screens
       }}
     >
@@ -55,13 +66,13 @@ export default function CustomizedTimeline() {
             id="panel1-header"
             sx={{
               flexDirection: { xs: "row-reverse", sm: "row" }, // Reverse icon position on mobile
-              textAlign: { xs: "left", sm: "inherit" },
+              textAlign: { xs: "left", sm: "inherit", lg: "left" },
             }}
           >
             {exp.name} {exp.major}
           </AccordionSummary>
           <AccordionDetails>
-            <p className="leading-relaxed">{exp.description}</p>
+            <div>{detail(exp.description)}</div>
           </AccordionDetails>
         </Accordion>
       </TimelineContent>

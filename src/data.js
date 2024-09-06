@@ -152,13 +152,10 @@ export const experience = [
     major: "software developer",
     image: "./py.jpg",
     description: [
-      "Developed precision test platform with SpringBoot",
-      "Used RabbitMQ for message consumption",
-      "Proficient in SQL for database management",
-      "Created predictive model with Deep Neural Networks",
-      "Implemented test automation pipeline, reducing workload by 50%",
-      "Developed front-end with Vue3 and JavaScript",
-      "Deployed in Kubernetes for scalability and reliability",
+      "Integrated the YepAI management system with a third-party email provider for enhanced communication capabilities",
+      "Deployed AWS Lambda functions to manage sign-in and sign-up requests on the YepAI website, ensuring efficient handling of user authentication processes",
+      "Responsible for managing and analyzing user data within YepAI, leveraging insights for reporting and strategic decision-making.",
+      "Developed text-to-voice generation model by using python and aws, and applied it on digital human",
     ],
     detail: {
       type: "Skills",
