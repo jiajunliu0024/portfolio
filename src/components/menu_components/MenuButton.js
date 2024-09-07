@@ -102,7 +102,7 @@ export default function MenuListComposition() {
                       <a href="#projects">Project</a>
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
-                      <a href="#blog">Blog</a>
+                      <a href="#skill">Skill</a>
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
                       <a href="#contact">Contact</a>
