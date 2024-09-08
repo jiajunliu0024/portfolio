@@ -11,7 +11,6 @@ import Stack from "@mui/material/Stack";
 export default function MenuListComposition() {
   const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef(null);
-
   const handleToggle = () => {
     setOpen((prevOpen) => !prevOpen);
   };
@@ -20,7 +19,6 @@ export default function MenuListComposition() {
     if (anchorRef.current && anchorRef.current.contains(event.target)) {
       return;
     }
-
     setOpen(false);
   };
 
@@ -96,16 +94,24 @@ export default function MenuListComposition() {
                     aria-labelledby="composition-button"
                   >
                     <MenuItem onClick={handleClose}>
-                      <a href="#about">About</a>
+                      <a className="w-full h-full" href="#about">
+                        About
+                      </a>
+                    </MenuItem>
+                    <MenuItem onClick={() => handleClose}>
+                      <a className="w-full h-full" href="#projects">
+                        projects
+                      </a>
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
-                      <a href="#projects">Project</a>
+                      <a className="w-full h-full" href="#skills">
+                        skills
+                      </a>
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
-                      <a href="#skill">Skill</a>
-                    </MenuItem>
-                    <MenuItem onClick={handleClose}>
-                      <a href="#contact">Contact</a>
+                      <a className="w-full h-full" href="#contact">
+                        Experience
+                      </a>
                     </MenuItem>
                     <MenuItem onClick={handleClose}>Download Resume</MenuItem>
                   </MenuList>
