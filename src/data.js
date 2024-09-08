@@ -24,8 +24,8 @@ export const projects = [
   {
     title: "Epic Todo App",
     subtitle: "React Hooks",
-    description: "An easy to-do app to track every day tasks",
-    image: "./project-4.gif",
+    description: "Music tracker to keep update the latest music",
+    image: "./project-2.gif",
   },
 ];
 

@@ -16,9 +16,12 @@ export default function Projects() {
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base"></p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          {projects.map((project) => (
-            <div className="bg-gray-100 rounded-lg  sm:w-full md:w-full lg:w-full h-72 p-4">
-              <a className="h-full" href={project.link} key={project.image}>
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="bg-gray-100 rounded-lg  sm:w-full md:w-full lg:w-full h-72 p-4"
+            >
+              <a className="h-full" href={project.link}>
                 <div className="relative flex flex-col h-full">
                   <img
                     alt="gallery"
