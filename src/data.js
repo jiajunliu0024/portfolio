@@ -1,15 +1,19 @@
 export const projects = [
   {
-    title: "Shopping Mall",
-    subtitle: "React and AI",
-    description: "It was an online shopping mall",
-    image: "./project-1.gif",
+    title: "Yep AI",
+    subtitle: "React and Java",
+    description:
+      "Use digital humans to provide a tailored experience for customers",
+    image: "./yep-ai.gif",
+    link: "https://www.yepai.io/",
   },
   {
-    title: "React Music",
-    subtitle: "React and Java",
-    description: "It was a music player created by react",
-    image: "./project-2.gif",
+    title: "Petrol Map",
+    subtitle: "React and Python",
+    description:
+      "Realtime update servo information and provides navigation on map",
+    image: "./map.gif",
+    link: "https://petrol-co.com",
   },
   {
     title: "DevChat",
@@ -51,9 +55,9 @@ export const skills = [
   "Material UI",
 ];
 
-export const educations = [
+export const experience = [
   {
-    period: "2017-2020",
+    period: "2017.07-2020.10",
     name: "Monash University",
     major: "Advanced Computer Science",
     image: "./monash.png",
@@ -85,7 +89,7 @@ export const educations = [
     },
   },
   {
-    period: "2020-2022",
+    period: "2020.10-2022.12",
     name: "University of Melbourne",
     major: "Artifical Intelligence",
     image: "./unimelb.jpg",
@@ -114,11 +118,8 @@ export const educations = [
       },
     },
   },
-];
-
-export const jobs = [
   {
-    period: "2022-2024",
+    period: "2022.12-2024.5",
     name: "Huawei",
     major: "Software Developer",
     image: "./huawei.jpg",
@@ -150,10 +151,16 @@ export const jobs = [
     },
   },
   {
-    period: "2024-Current",
-    name: "Monash Professional Year",
-    major: "Intership",
+    period: "2024.6-Current",
+    name: "YepAI",
+    major: "software developer",
     image: "./py.jpg",
+    description: [
+      "Integrated the YepAI management system with a third-party email provider for enhanced communication capabilities",
+      "Deployed AWS Lambda functions to manage sign-in and sign-up requests on the YepAI website, ensuring efficient handling of user authentication processes",
+      "Responsible for managing and analyzing user data within YepAI, leveraging insights for reporting and strategic decision-making.",
+      "Developed text-to-voice generation model by using python and aws, and applied it on digital human",
+    ],
     detail: {
       type: "Skills",
       desc: "The project I was finished in my previous job",

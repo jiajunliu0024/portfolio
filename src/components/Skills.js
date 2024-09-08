@@ -6,7 +6,7 @@ import { skills } from "../data";
 
 export default function Skills() {
   return (
-    <section id="skills" className=" text-gray-400 bg-gray-900 body-font">
+    <section id="skills" className=" text-black bg-white-900 body-font">
       <div className="container px-5 py-10 mx-auto">
         <div className="text-center mb-20">
           <ChipIcon className="w-10 inline-block mb-4" />
