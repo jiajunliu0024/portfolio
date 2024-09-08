@@ -4,12 +4,15 @@ export const projects = [
     subtitle: "React and AI",
     description: "It was an online shopping mall",
     image: "./project-1.gif",
+    link: "",
   },
   {
-    title: "React Music",
-    subtitle: "React and Java",
-    description: "It was a music player created by react",
-    image: "./project-2.gif",
+    title: "Petrol Map",
+    subtitle: "React and Python",
+    description:
+      "Realtime update servo information and provides navigation on map",
+    image: "./map.gif",
+    link: "petrol-co.com",
   },
   {
     title: "DevChat",
