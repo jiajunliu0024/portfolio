@@ -1,10 +1,11 @@
 export const projects = [
   {
-    title: "Shopping Mall",
-    subtitle: "React and AI",
-    description: "It was an online shopping mall",
-    image: "./project-1.gif",
-    link: "",
+    title: "Yep AI",
+    subtitle: "React and Java",
+    description:
+      "Use digital humans to provide a tailored experience for customers",
+    image: "./yep-ai.gif",
+    link: "https://www.yepai.io/",
   },
   {
     title: "Petrol Map",
@@ -12,7 +13,7 @@ export const projects = [
     description:
       "Realtime update servo information and provides navigation on map",
     image: "./map.gif",
-    link: "petrol-co.com",
+    link: "https://petrol-co.com",
   },
   {
     title: "DevChat",
