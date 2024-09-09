@@ -99,17 +99,17 @@ export default function MenuListComposition() {
                       </a>
                     </MenuItem>
                     <MenuItem onClick={() => handleClose}>
-                      <a className="w-full h-full" href="#projects">
+                      <a className="w-full h-full" href="#Projects">
                         projects
                       </a>
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
-                      <a className="w-full h-full" href="#skills">
+                      <a className="w-full h-full" href="#Skills">
                         skills
                       </a>
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
-                      <a className="w-full h-full" href="#contact">
+                      <a className="w-full h-full" href="#experience">
                         Experience
                       </a>
                     </MenuItem>

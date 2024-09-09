@@ -80,7 +80,7 @@ export default function CustomizedTimeline() {
   ));
 
   return (
-    <div className="sm:w-full md:w-4/5 lg:w-3/4 mx-auto">
+    <div section="experience" className="sm:w-full md:w-4/5 lg:w-3/4 mx-auto">
       <Timeline position={isMobile ? "right" : "alternate"}>
         {expTimeLineItem}
       </Timeline>
