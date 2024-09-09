@@ -2,7 +2,7 @@
 
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-
+import profileImg from "./images/profile-image.jpeg";
 export default function About() {
   return (
     <section id="about">
@@ -53,7 +53,7 @@ export default function About() {
             <img
               className="object-cover object-center rounded"
               alt="hero"
-              src="/profile_image.jpeg"
+              src={profileImg}
             />
           </div>
         </div>
