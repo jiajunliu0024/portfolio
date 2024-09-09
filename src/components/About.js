@@ -4,7 +4,7 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 
 export default function About() {
-  const profileImg = `${process.env.PUBLIC_URL}/images/profile-image.jpeg`;
+  const profileImg = `${process.env.PUBLIC_URL}/images/profile-image.jpg`;
   return (
     <section id="about">
       <div className="container py-20 sm:px-10 md:px-10 lg:px-40 mx-auto bg-white-900 flex px-10 py-20 md:flex-row flex-col items-center">
