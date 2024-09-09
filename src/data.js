@@ -22,10 +22,10 @@ export const projects = [
     image: "./project-3.gif",
   },
   {
-    title: "Epic Todo App",
-    subtitle: "React Hooks",
-    description: "An easy to-do app to track every day tasks",
-    image: "./project-4.gif",
+    title: "Text2Voice",
+    subtitle: "React Python",
+    description: "A tool can simulate your voice for any texts",
+    image: "./project-2.gif",
   },
 ];
 
