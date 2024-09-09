@@ -14,9 +14,13 @@ import { useMediaQuery, useTheme } from "@mui/material";
 
 const detail = (description) => {
   return (
-    <ul>
-      {description.map((describe) => (
-        <li>{describe}</li>
+    <ul className="text-left list-disc ml-5">
+      {" "}
+      {/* Left-align with some margin */}
+      {description.map((describe, index) => (
+        <li key={index} className="text-left">
+          {describe}
+        </li>
       ))}
     </ul>
   );
@@ -32,7 +36,6 @@ export default function CustomizedTimeline() {
       sx={{
         display: "flex",
         alignSelf: "center",
-        justifyContent: "flex-start", // Align items to the left
         flexDirection: { xs: "column", sm: "row" }, // Stack items vertically on small screens
       }}
     >
@@ -80,7 +83,7 @@ export default function CustomizedTimeline() {
   ));
 
   return (
-    <div className="sm:w-full md:w-4/5 lg:w-3/4 mx-auto">
+    <div section="experience" className="sm:w-full md:w-4/5 lg:w-3/4 mx-auto">
       <Timeline position={isMobile ? "right" : "alternate"}>
         {expTimeLineItem}
       </Timeline>

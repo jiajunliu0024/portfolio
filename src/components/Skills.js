@@ -4,18 +4,19 @@ import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
 import React from "react";
 import { skills } from "../data";
 
+
 export default function Skills() {
   return (
     <section id="skills" className=" text-black bg-white-900 body-font">
       <div className="container px-5 py-10 mx-auto">
         <div className="text-center mb-20">
           <ChipIcon className="w-10 inline-block mb-4" />
-          <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
+          <h1 className="sm:text-4xl text-3xl font-medium title-font text-black mb-4">
             Skills &amp; Technologies
           </h1>
           <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-            I have real work experience in Front-end and Back-end. My stack is
-            aim to Java, C# and JavaScript.
+            "I have practical work experience in both Front-end and Back-end
+            development, with expertise in Java, C#, and JavaScript."
           </p>
         </div>
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
