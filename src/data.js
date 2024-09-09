@@ -1,10 +1,15 @@
+import petrolMap from "./components/images/petrol-map.gif";
+import yepai from "./components/images/yep-ai.gif";
+import voice2text from "./components/images/voice-2-text.gif";
+import devChat from "./components/images/dev-chat.gif";
+
 export const projects = [
   {
     title: "Yep AI",
     subtitle: "React and Java",
     description:
       "Use digital humans to provide a tailored experience for customers",
-    image: "./yep-ai.gif",
+    image: yepai,
     link: "https://www.yepai.io/",
   },
   {
@@ -12,20 +17,20 @@ export const projects = [
     subtitle: "React and Python",
     description:
       "Realtime update servo information and provides navigation on map",
-    image: "./map.gif",
+    image: petrolMap,
     link: "https://petrol-co.com",
   },
   {
     title: "DevChat",
     subtitle: "Nodejs and Firebase",
     description: "Use React and FireBase to create an online ",
-    image: "./project-3.gif",
+    image: devChat,
   },
   {
     title: "Text2Voice",
     subtitle: "React Python",
     description: "A tool can simulate your voice for any texts",
-    image: "./project-2.gif",
+    image: voice2text,
   },
 ];
 

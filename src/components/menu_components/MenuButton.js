@@ -7,6 +7,7 @@ import Popper from "@mui/material/Popper";
 import MenuItem from "@mui/material/MenuItem";
 import MenuList from "@mui/material/MenuList";
 import Stack from "@mui/material/Stack";
+import resume from "../images/resume.pdf";
 
 export default function MenuListComposition() {
   const [open, setOpen] = React.useState(false);
@@ -77,7 +78,7 @@ export default function MenuListComposition() {
           placement="bottom-end"
           transition
           disablePortal
-          className="bg-white drop-shadow-md rounded"
+          className="w-48 bg-white drop-shadow-md rounded"
         >
           {({ TransitionProps, placement }) => (
             <Grow
@@ -94,12 +95,12 @@ export default function MenuListComposition() {
                     id="composition-menu"
                     aria-labelledby="composition-button"
                   >
-                    <MenuItem onClick={handleClose}>
+                    <MenuItem className="w-full" onClick={handleClose}>
                       <a className="w-full h-full" href="#about">
                         About
                       </a>
                     </MenuItem>
-                    <MenuItem onClick={() => handleClose}>
+                    <MenuItem onClick={handleClose}>
                       <a className="w-full h-full" href="#projects">
                         Projects
                       </a>
@@ -114,7 +115,16 @@ export default function MenuListComposition() {
                         Experience
                       </a>
                     </MenuItem>
-                    <MenuItem onClick={handleClose}>Download Resume</MenuItem>
+                    <MenuItem onClick={handleClose}>
+                      <a
+                        href={resume}
+                        className="w-full h-full"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Resume
+                      </a>
+                    </MenuItem>
                   </MenuList>
                 </ClickAwayListener>
               </Box>

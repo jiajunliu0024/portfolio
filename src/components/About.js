@@ -15,12 +15,12 @@ export default function About() {
             sequence={[
               // Same substring at the start will only be typed out once, initially
               "I am a back-end developer",
-              1000, // wait 1s before replacing "Mice" with "Hamsters"
+              1000, // wait 1 second before replacing
               "I am a team player",
               1000,
-              "I am a code lover",
+              "I am passionate about coding",
               1000,
-              "I'like to help people to build their dream",
+              "I love helping people bring their dreams to life",
               1000,
             ]}
             wrapper="span"
