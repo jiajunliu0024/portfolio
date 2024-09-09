@@ -25,7 +25,7 @@ export default function Projects() {
                     className=" w-full h-3/4 object-cover object-center"
                     src={project.image}
                   />
-                  <div className="relative z-10 flex flex-col justify-between h-full p-4">
+                  <div className="relative z-10 flex flex-col justify-between h-full px-1">
                     <h1 className="text-xl font-bold text-black">
                       {project.title}
                     </h1>

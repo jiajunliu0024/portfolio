@@ -6,8 +6,8 @@ import { TypeAnimation } from "react-type-animation";
 export default function About() {
   return (
     <section id="about">
-      <div className="container px-10 py-40 md:px-40 lg:px-60 mx-auto bg-white-900 flex px-10 py-20 md:flex-row flex-col items-center">
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <div className="container py-20 sm:px-10 md:px-10 lg:px-40 mx-auto bg-white-900 flex px-10 py-20 md:flex-row flex-col items-center">
+        <div className="lg:flex-grow md:w-2/3 lg:pr-16 md:pr-8 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-black">
             Hi, I'm Jiajun.
           </h1>
@@ -33,22 +33,22 @@ export default function About() {
             meet you.
           </p>
 
-          <div className="flex place-content-between ">
+          <div className="w-full flex lg:justify-start md:justify-center sm:justify-center">
             <a
               href="#contact"
-              className="inline-flex text-white bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"
+              className="inline-flex text-white bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-base"
             >
               Work With Me
             </a>
             <a
               href="#projects"
-              className="ml-4 inline-flex text-white bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"
+              className="ml-2 inline-flex text-white bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-base"
             >
               See My Past Work
             </a>
           </div>
         </div>
-        <div className="lg:max-w-xl lg:w-full md:w-3/4 w-full">
+        <div className="lg:w-4/5 md:w-4/5 w-full">
           <div className="bg-gray-100 p-4 rounded-lg">
             <img
               className="object-cover object-center rounded"

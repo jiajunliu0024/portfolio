@@ -77,6 +77,7 @@ export default function MenuListComposition() {
           placement="bottom-end"
           transition
           disablePortal
+          className="bg-white drop-shadow-md rounded"
         >
           {({ TransitionProps, placement }) => (
             <Grow
@@ -99,13 +100,13 @@ export default function MenuListComposition() {
                       </a>
                     </MenuItem>
                     <MenuItem onClick={() => handleClose}>
-                      <a className="w-full h-full" href="#Projects">
-                        projects
+                      <a className="w-full h-full" href="#projects">
+                        Projects
                       </a>
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
-                      <a className="w-full h-full" href="#Skills">
-                        skills
+                      <a className="w-full h-full" href="#skills">
+                        Skills
                       </a>
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
