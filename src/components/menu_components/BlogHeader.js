@@ -14,7 +14,7 @@ export default function BlogHeader() {
           <Marquee className="bg-gray-100 h-10 items-center rounded-full hover:bg-gray-200 hover:h-14 transition-all duration-300 ease-in-out">
             <div className="flex items-center">
               <div class="h-3 w-3 bg-green-400 rounded-full"></div>
-              <div class="h-3 w-3 bg-green-400 rounded-full absolute   animate-ping"></div>
+              <div class="h-3 w-3 bg-green-400 rounded-full absolute animate-ping"></div>
               <span className="ml-2">Available for new positions</span>
             </div>
           </Marquee>
