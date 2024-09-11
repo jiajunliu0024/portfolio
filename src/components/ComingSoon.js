@@ -11,7 +11,7 @@ export default function ComingSoon() {
       <div className="flex flex-col items-center justify-center">
         <h1 className="py-4 text-xl">Coming Soon</h1>
         <p>
-          We are working hard to launch this page. Stay tuned for more
+          I am working hard to launch this page. Stay tuned for more
           information.
         </p>
       </div>
