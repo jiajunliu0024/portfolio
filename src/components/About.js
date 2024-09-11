@@ -3,6 +3,18 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 
+/**
+ * About component renders the "About" section of the portfolio.
+ * It includes a profile image, a brief introduction, and links to contact and project sections.
+ *
+ * @component
+ * @example
+ * return (
+ *   <About />
+ * )
+ *
+ * @returns {JSX.Element} The rendered "About" section.
+ */
 export default function About() {
   const profileImg = `${process.env.PUBLIC_URL}/images/profile-image.jpg`;
   return (
@@ -14,9 +26,8 @@ export default function About() {
           </h1>
           <TypeAnimation
             sequence={[
-              // Same substring at the start will only be typed out once, initially
-              "I am a back-end developer",
-              1000, // wait 1 second before replacing
+              "I am a software developer",
+              1000,
               "I am a team player",
               1000,
               "I am passionate about coding",
