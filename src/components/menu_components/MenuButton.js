@@ -125,6 +125,11 @@ export default function MenuListComposition() {
                         Resume
                       </a>
                     </MenuItem>
+                    <MenuItem onClick={handleClose}>
+                      <a href="/contact" className="w-full h-full">
+                        Contact
+                      </a>
+                    </MenuItem>
                   </MenuList>
                 </ClickAwayListener>
               </Box>
