@@ -3,7 +3,7 @@
 This project was React with [Create React App](https://github.com/facebook/create-react-app).
 
 # Project Website
-[https://jiajun.com.au]
+https://jiajun.com.au
 
 ## Available Scripts
 
