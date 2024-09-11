@@ -1,7 +1,7 @@
 import petrolMap from "./components/images/petrol-map.gif";
 import yepai from "./components/images/yep-ai.gif";
 import voice2text from "./components/images/voice-2-text.gif";
-import devChat from "./components/images/dev-chat.gif";
+import digitalRefrige from "./components/images/digital-refrige.gif";
 
 export const projects = [
   {
@@ -21,16 +21,18 @@ export const projects = [
     link: "https://petrol-co.com",
   },
   {
-    title: "DevChat",
-    subtitle: "Nodejs and Firebase",
-    description: "Use React and FireBase to create an online ",
-    image: devChat,
+    title: "Digital Refridge",
+    subtitle: "Java and FireBase",
+    description: "An Android app will help users manage food expiration dates",
+    image: digitalRefrige,
+    link: "https://github.com/jiajunliu0024/DigitalRefrige",
   },
   {
-    title: "Text2Voice",
-    subtitle: "React Python",
+    title: "Voice Cloning",
+    subtitle: "React and Node Js",
     description: "A tool can simulate your voice for any texts",
     image: voice2text,
+    link: "",
   },
 ];
 
