@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+.button-submit {
+  background-color: black;
+  color: white;
+}
