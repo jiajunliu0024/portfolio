@@ -36,22 +36,27 @@ export const projects = [
   },
 ];
 
-export const testimonials = [
+export const comments = [
   {
-    quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
-    image: "https://randomuser.me/api/portraits/men/1.jpg",
+    text: "Jiajun is a talented developer with a strong work ethic. He is always willing to go the extra mile to ensure that his projects are completed on time and to the highest standard. I would highly recommend him to anyone looking for a skilled software engineer.",
+    image: "https://randomuser.me/api/portraits/men/94.jpg",
     name: "Jesse Hicks",
     company: "Zoozle",
     link: "https://www.linkedin.com/in/jesse-hicks-2b5a6b1b7/",
   },
   {
-    quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
+    text: "Jiajun is a highly skilled developer with a keen eye for detail. He is able to quickly understand complex requirements and deliver high-quality solutions. I have worked with him on several projects and have always been impressed with his work.",
     image: "https://randomuser.me/api/portraits/men/94.jpg",
     name: "Ruben Alvarez",
     company: "Dooble.io",
     link: "https://www.linkedin.com/in/ruben-alvarez-2b5a6b1b7/",
+  },
+  {
+    text: "Jiajun is a talented developer with a strong work ethic. He is always willing to go the extra mile to ensure that his projects are completed on time and to the highest standard. I would highly recommend him to anyone looking for a skilled software engineer.",
+    image: "https://randomuser.me/api",
+    name: "Anderson Um",
+    company: "Zoozle",
+    link: "https://www.linkedin.com/in/jesse-hicks-2b5a6b1b7/",
   },
 ];
 

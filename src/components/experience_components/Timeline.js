@@ -7,6 +7,7 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import { experience } from "../../data.js";
+import "../style.css";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -15,8 +16,6 @@ import { useMediaQuery, useTheme } from "@mui/material";
 const detail = (description) => {
   return (
     <ul className="text-left list-disc ml-5">
-      {" "}
-      {/* Left-align with some margin */}
       {description.map((describe, index) => (
         <li key={index} className="text-left">
           {describe}
@@ -35,21 +34,21 @@ export default function CustomizedTimeline() {
       key={exp.name}
       sx={{
         display: "flex",
-        alignSelf: "center",
+        alignSelf: "left",
         flexDirection: { xs: "column", sm: "row" }, // Stack items vertically on small screens
+        width: { lg: "100%" }, // Make the timeline item take full width on large screens
       }}
     >
-      {!isMobile && (
-        <TimelineOppositeContent
-          className="text-black"
-          sx={{
-            m: { xs: 0, sm: "auto 0" }, // Remove margin on small screens
-            textAlign: { xs: "left", md: "right" }, // Align text to the left on small screens
-          }}
-        >
-          {exp.period}
-        </TimelineOppositeContent>
-      )}
+      <TimelineOppositeContent
+        className="text-black"
+        sx={{
+          m: { xs: 0, sm: "auto 0" }, // Remove margin on small screens
+          textAlign: { xs: "center", md: "right" }, // Align text to the left on small screens
+          flex: 0.15, // Allow opposite content to take up 20% of the width
+        }}
+      >
+        {exp.period}
+      </TimelineOppositeContent>
       <TimelineSeparator
         sx={{
           alignSelf: { xs: "center", sm: "stretch" }, // Center dot on small screens
@@ -62,14 +61,18 @@ export default function CustomizedTimeline() {
           }}
         />
       </TimelineSeparator>
-      <TimelineContent>
+      <TimelineContent
+        sx={{
+          flex: 0.8, // Allow the content to take up 80% of the width
+        }}
+      >
         <Accordion>
           <AccordionSummary
             aria-controls="panel1-content"
             id="panel1-header"
             sx={{
-              flexDirection: { xs: "row-reverse", sm: "row" }, // Reverse icon position on mobile
-              textAlign: { xs: "left", sm: "inherit", lg: "left" },
+              flexDirection: "row", // Normal icon position
+              textAlign: "left",
             }}
           >
             {exp.name} {exp.major}
@@ -83,10 +86,30 @@ export default function CustomizedTimeline() {
   ));
 
   return (
-    <div section="experience" className="sm:w-full md:w-4/5 lg:w-3/4 mx-auto">
-      <Timeline position={isMobile ? "right" : "alternate"}>
-        {expTimeLineItem}
-      </Timeline>
+    <div class="relative h-screen w-full overflow-hidden">
+      <div
+        section="experience"
+        className="  sm:w-full md:w-4/5 lg:w-3/4 mx-auto border shadow-lg rounded-lg"
+        style={{
+          display: "flex",
+          justifyContent: "flex-start", // Align to the left
+          alignItems: "flex-start", // Align items to the top
+        }}
+      >
+        <Timeline
+          position="left"
+          sx={{
+            "&.MuiTimeline-root": {
+              padding: "0", // Remove padding on large screens
+            },
+            ml: { lg: "0" }, // Remove the default margin-left on large screens
+            mt: 5,
+            mb: 5,
+          }}
+        >
+          {expTimeLineItem}
+        </Timeline>
+      </div>
     </div>
   );
 }
