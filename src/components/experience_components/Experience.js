@@ -16,9 +16,7 @@ export default function Experience() {
         </h1>
       </div>
 
-      <div>
-        <CustomizedTimeline></CustomizedTimeline>
-      </div>
+      <CustomizedTimeline></CustomizedTimeline>
     </div>
   );
 }

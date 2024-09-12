@@ -7,6 +7,7 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import { experience } from "../../data.js";
+import "../style.css";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -42,7 +43,7 @@ export default function CustomizedTimeline() {
         className="text-black"
         sx={{
           m: { xs: 0, sm: "auto 0" }, // Remove margin on small screens
-          textAlign: { xs: "center", md: "left" }, // Align text to the left on small screens
+          textAlign: { xs: "center", md: "right" }, // Align text to the left on small screens
           flex: 0.15, // Allow opposite content to take up 20% of the width
         }}
       >
@@ -85,28 +86,30 @@ export default function CustomizedTimeline() {
   ));
 
   return (
-    <div
-      section="experience"
-      className="sm:w-full md:w-4/5 lg:w-3/4 mx-auto bg-gray-100 rounded-lg"
-      style={{
-        display: "flex",
-        justifyContent: "flex-start", // Align to the left
-        alignItems: "flex-start", // Align items to the top
-      }}
-    >
-      <Timeline
-        position="left"
-        sx={{
-          "&.MuiTimeline-root": {
-            padding: "0", // Remove padding on large screens
-          },
-          ml: { lg: "0" }, // Remove the default margin-left on large screens
-          mt: 5,
-          mb: 5,
+    <div class="relative h-screen w-full overflow-hidden">
+      <div
+        section="experience"
+        className="  sm:w-full md:w-4/5 lg:w-3/4 mx-auto border shadow-lg rounded-lg"
+        style={{
+          display: "flex",
+          justifyContent: "flex-start", // Align to the left
+          alignItems: "flex-start", // Align items to the top
         }}
       >
-        {expTimeLineItem}
-      </Timeline>
+        <Timeline
+          position="left"
+          sx={{
+            "&.MuiTimeline-root": {
+              padding: "0", // Remove padding on large screens
+            },
+            ml: { lg: "0" }, // Remove the default margin-left on large screens
+            mt: 5,
+            mb: 5,
+          }}
+        >
+          {expTimeLineItem}
+        </Timeline>
+      </div>
     </div>
   );
 }

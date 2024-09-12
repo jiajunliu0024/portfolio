@@ -5,7 +5,7 @@ import { ChatAlt2Icon } from "@heroicons/react/solid";
 
 export const CommentCard = ({ comments }) => {
   return (
-    <Marquee speed={200} className="py-10 h-50 w-full ease-in-out">
+    <Marquee speed={150} className="py-10 h-50 w-full ease-in-out">
       {comments.map((comment) => (
         <div className="shadow-lg flex h-auto mx-10 h-[250px] w-[400px] flex-col border rounded-lg p-4">
           <div>
