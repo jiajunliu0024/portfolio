@@ -2,6 +2,9 @@ import petrolMap from "./components/images/petrol-map.gif";
 import yepai from "./components/images/yep-ai.gif";
 import voice2text from "./components/images/voice-2-text.gif";
 import digitalRefrige from "./components/images/digital-refrige.gif";
+import kenImg from "./components/images/ken.jpeg";
+import mengImg from "./components/images/meng.jpeg";
+import nortonImg from "./components/images/norton.jpeg";
 
 export const projects = [
   {
@@ -39,24 +42,24 @@ export const projects = [
 export const comments = [
   {
     text: "Jiajun is a talented developer with a strong work ethic. He is always willing to go the extra mile to ensure that his projects are completed on time and to the highest standard. I would highly recommend him to anyone looking for a skilled software engineer.",
-    image: "https://randomuser.me/api/portraits/men/94.jpg",
-    name: "Jesse Hicks",
-    company: "Zoozle",
-    link: "https://www.linkedin.com/in/jesse-hicks-2b5a6b1b7/",
+    image: nortonImg,
+    name: "Norton Wei",
+    company: "YepAi",
+    link: "https://www.linkedin.com/in/wenzhou-wei-535060aa/",
   },
   {
-    text: "Jiajun is a highly skilled developer with a keen eye for detail. He is able to quickly understand complex requirements and deliver high-quality solutions. I have worked with him on several projects and have always been impressed with his work.",
-    image: "https://randomuser.me/api/portraits/men/94.jpg",
-    name: "Ruben Alvarez",
-    company: "Dooble.io",
-    link: "https://www.linkedin.com/in/ruben-alvarez-2b5a6b1b7/",
+    text: "Working with Jiajun has been an absolute pleasure. His dedication to delivering high-quality work is commendable. Jiajun's expertise in development coupled with his proactive approach in staying updated with industry advancements makes him a valuable asset to any project. Looking forward to collaborating with him again!",
+    image: kenImg,
+    name: "ken vilaysane",
+    company: "NAB",
+    link: "https://www.linkedin.com/in/ken-vilaysane/",
   },
   {
-    text: "Jiajun is a talented developer with a strong work ethic. He is always willing to go the extra mile to ensure that his projects are completed on time and to the highest standard. I would highly recommend him to anyone looking for a skilled software engineer.",
-    image: "https://randomuser.me/api",
-    name: "Anderson Um",
-    company: "Zoozle",
-    link: "https://www.linkedin.com/in/jesse-hicks-2b5a6b1b7/",
+    text: "A highly skilled developer, Jiajun combines technical expertise with a strong sense of responsibility. He consistently delivers high-quality work, even under tight deadlines. His dedication and reliability make him an excellent choice for any team seeking a talented software engineer",
+    image: mengImg,
+    name: "Meng Chen",
+    company: "JD.COM",
+    link: "https://www.linkedin.com/in/meng-chen-50547a3a//",
   },
 ];
 
