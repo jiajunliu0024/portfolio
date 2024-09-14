@@ -63,14 +63,7 @@ export const comments = [
   },
 ];
 
-export const skills = [
-  "JavaScript",
-  "React",
-  "Java",
-  "Node",
-  "SQL",
-  "Material UI",
-];
+export const skills = ["JavaScript", "React", "Java", "Node", "SQL", "Node.js"];
 
 export const experience = [
   {
