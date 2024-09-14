@@ -5,18 +5,23 @@ import { ChatAlt2Icon } from "@heroicons/react/solid";
 
 export const CommentCard = ({ comments }) => {
   return (
-    <Marquee speed={150} className="py-10 h-50 w-full ease-in-out">
+    <Marquee
+      speed={100}
+      autoFill={true}
+      gradientWidth={100}
+      className="py-10 h-50 w-1/2 ease-in-out"
+    >
       {comments.map((comment) => (
-        <div className="shadow-lg flex h-auto mx-10 h-[250px] w-[400px] flex-col border rounded-lg p-4">
+        <div className="shadow-lg flex h-auto h-[300px] w-[400px] flex-col border rounded-lg p-4">
           <div>
             <article className="text-wrap w-full h-full">
               <p className="text-slate-500">{comment.text}</p>
             </article>
           </div>
-          <div className="mt-5 flex flex-row">
+          <div className="mt-auto flex flex-row">
             <Avatar src={comment.image} />
             <div className="ml-3 flex flex-col">
-              <h2 className="text-slate-600 text-sm">{comment.person}</h2>
+              <h2 className="text-slate-600 text-sm">{comment.name}</h2>
               <h4 className="text-slate-400 text-xs">{comment.company}</h4>
             </div>
           </div>
