@@ -86,7 +86,7 @@ export default function CustomizedTimeline() {
   ));
 
   return (
-    <div class="relative h-screen w-full overflow-hidden">
+    <div class="relative h-auto w-full overflow-hidden">
       <div
         section="experience"
         className="  sm:w-full md:w-4/5 lg:w-3/4 mx-auto border shadow-lg rounded-lg"
