@@ -5,6 +5,7 @@ import digitalRefrige from "./components/images/digital-refrige.gif";
 import kenImg from "./components/images/ken.jpeg";
 import mengImg from "./components/images/meng.jpeg";
 import nortonImg from "./components/images/norton.jpeg";
+import andersonImg from "./components/images/anderson.jpeg";
 
 export const projects = [
   {
@@ -44,7 +45,7 @@ export const comments = [
     text: "Jiajun is a talented developer with a strong work ethic. He is always willing to go the extra mile to ensure that his projects are completed on time and to the highest standard. I would highly recommend him to anyone looking for a skilled software engineer.",
     image: nortonImg,
     name: "Norton Wei",
-    company: "YepAi",
+    company: "Huawei Pty Ltd",
     link: "https://www.linkedin.com/in/wenzhou-wei-535060aa/",
   },
   {
@@ -60,6 +61,13 @@ export const comments = [
     name: "Meng Chen",
     company: "JD.COM",
     link: "https://www.linkedin.com/in/meng-chen-50547a3a//",
+  },
+  {
+    text: "Jiajun is a talented developer with a strong work ethic. He is always willing to go the extra mile to ensure that his projects are completed on time and to the highest standard. I would highly recommend him to anyone looking for a skilled software engineer.",
+    image: andersonImg,
+    name: "Anderson",
+    company: "YepAI",
+    link: "https://www.linkedin.com/in/un-leng-kam-a28582269/",
   },
 ];
 
