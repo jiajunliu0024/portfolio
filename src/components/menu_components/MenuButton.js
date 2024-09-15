@@ -7,7 +7,7 @@ import Popper from "@mui/material/Popper";
 import MenuItem from "@mui/material/MenuItem";
 import MenuList from "@mui/material/MenuList";
 import Stack from "@mui/material/Stack";
-import resume from "../images/Wilson_Resume.pdf";
+import resume from "../images/resume.pdf";
 
 export default function MenuListComposition() {
   const [open, setOpen] = React.useState(false);
