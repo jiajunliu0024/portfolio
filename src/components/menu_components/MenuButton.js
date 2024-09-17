@@ -127,8 +127,8 @@ export default function MenuListComposition() {
                       </a>
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
-                      <a href="/contact" className="w-full h-full">
-                        Contact
+                      <a href="/#schedule" className="w-full h-full">
+                        Talk to me
                       </a>
                     </MenuItem>
                   </MenuList>
