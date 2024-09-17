@@ -47,7 +47,7 @@ export default function About() {
 
           <div className="w-full flex lg:justify-start md:justify-center sm:justify-center">
             <a
-              href="#contact"
+              href="#schedule"
               className="inline-flex text-white bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-base"
             >
               Work With Me
