@@ -9,6 +9,7 @@ import Testimonials from "./components/Testimonials";
 import ComingSoon from "./components/ComingSoon";
 import Copyright from "./components/info_components/Copyright";
 import BlogEventSchedule from "./components/BlogEventSchedule";
+import ContactBar from "./components/info_components/ContactBar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 
@@ -27,6 +28,7 @@ function App() {
               <Testimonials />
               <Skills />
               <BlogEventSchedule />
+              <ContactBar />
               <Copyright />
             </main>
           }

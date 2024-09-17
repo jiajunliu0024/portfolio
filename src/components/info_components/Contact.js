@@ -1,7 +1,6 @@
 // src/components/Contact.js
 import React, { useEffect } from "react";
 import BlogHeader from "../menu_components/BlogHeader";
-import Button from "@mui/material/Button";
 import "../../App.css";
 
 function DisplayValidationError({ hiddenStatus, message }) {
