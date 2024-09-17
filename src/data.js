@@ -7,6 +7,14 @@ import mengImg from "./components/images/meng.jpeg";
 import nortonImg from "./components/images/norton.jpeg";
 import andersonImg from "./components/images/anderson.jpeg";
 
+export const personInfo = {
+  linkedin: "https://www.linkedin.com/in/jiajun-liu-8a9b681b4/",
+  github: "https://github.com/jiajunliu0024",
+  hobby: "/coming-soon",
+  email: "jiajunliu0024@gmail.com",
+  whatsApp: "https://wa.me/0452590768",
+};
+
 export const projects = [
   {
     title: "Yep AI",
