@@ -23,9 +23,7 @@ const BlogEventSchedule = () => {
             Send me a message
           </a>
         </div>
-        {/* <p>
-          &copy; {new Date().getFullYear()} Your Blog Name. All rights reserved.
-        </p> */}
+       
       </div>
     </div>
   );
