@@ -7,6 +7,8 @@ import BlogHeader from "./components/menu_components/BlogHeader";
 import Experience from "./components/experience_components/Experience";
 import Testimonials from "./components/Testimonials";
 import ComingSoon from "./components/ComingSoon";
+import Copyright from "./components/info_components/Copyright";
+import BlogEventSchedule from "./components/BlogEventSchedule";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 
@@ -24,6 +26,8 @@ function App() {
               <Experience />
               <Testimonials />
               <Skills />
+              <BlogEventSchedule />
+              <Copyright />
             </main>
           }
         />

@@ -7,7 +7,8 @@ export const CommentCard = ({ comments }) => {
   return (
     <Marquee
       speed={200}
-      gradientWidth={100}
+      gradient={true}
+      gradientWidth={500}
       className="py-10 h-50 w-full ease-in-out"
       pauseOnHover={true}
     >
