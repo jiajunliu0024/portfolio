@@ -7,7 +7,7 @@ import Popper from "@mui/material/Popper";
 import MenuItem from "@mui/material/MenuItem";
 import MenuList from "@mui/material/MenuList";
 import Stack from "@mui/material/Stack";
-import resume from "../images/Wilson_Resume.pdf";
+import resume from "../images/resume.pdf";
 
 export default function MenuListComposition() {
   const [open, setOpen] = React.useState(false);
@@ -15,6 +15,7 @@ export default function MenuListComposition() {
   const handleToggle = () => {
     setOpen((prevOpen) => !prevOpen);
   };
+  const domain = process.env.REACT_APP_DOMAIN;
 
   const handleClose = (event) => {
     if (anchorRef.current && anchorRef.current.contains(event.target)) {
@@ -96,22 +97,22 @@ export default function MenuListComposition() {
                     aria-labelledby="composition-button"
                   >
                     <MenuItem className="w-full" onClick={handleClose}>
-                      <a className="w-full h-full" href="#about">
+                      <a className="w-full h-full" href="/#about">
                         About
                       </a>
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
-                      <a className="w-full h-full" href="#projects">
+                      <a className="w-full h-full" href="/#projects">
                         Projects
                       </a>
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
-                      <a className="w-full h-full" href="#skills">
+                      <a className="w-full h-full" href="/#skills">
                         Skills
                       </a>
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
-                      <a className="w-full h-full" href="#experience">
+                      <a className="w-full h-full" href="/#experience">
                         Experience
                       </a>
                     </MenuItem>

@@ -40,5 +40,20 @@
 .button-submit {
   background-color: black;
   color: white;
+  height: 30px;
+  width: 60px;
+  font-size: 13px;
+  margin-top: 20px;
+  padding: 2px 2px 2px 2px;
+  border-radius: 5px;
+}
+
+.button-submit:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.button-submit:active {
+  transform: scale(1.1);
 }
 
