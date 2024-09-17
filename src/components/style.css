@@ -24,6 +24,12 @@
     }
   }
   
+  .footer-grey-blackground {
+    background-color: #78797b;
+    height: 100px;
+    width: 80%;
+    border-radius: 10px;
+  }
     
 
 
