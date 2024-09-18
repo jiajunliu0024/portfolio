@@ -117,6 +117,16 @@ export default function MenuListComposition() {
                       </a>
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
+                      <a className="w-full h-full" href="/coming-soon">
+                        Blog
+                      </a>
+                    </MenuItem>
+                    <MenuItem onClick={handleClose}>
+                      <a className="w-full h-full" href="/coming-soon">
+                        Vlog
+                      </a>
+                    </MenuItem>
+                    <MenuItem onClick={handleClose}>
                       <a
                         href={resume}
                         className="w-full h-full"
