@@ -29,13 +29,13 @@ const BlogEventSchedule = () => {
             data-cal-namespace="15min"
             data-cal-link="jiajun-liu/15min"
             data-cal-config='{"layout":"month_view"}'
-            className="inline-flex text-white bg-gray-900 border-0 py-2 px-2 focus:outline-none hover:bg-white hover:text-black hover:scale-110 rounded-lg text-base"
+            className="inline-flex text-white bg-gray-900 border-0 py-2 px-2 focus:outline-none hover:bg-white hover:text-black hover:scale-110 transition duration-700 ease-in-out rounded-lg text-base"
           >
             Schedule a Meeting
           </button>
           <a
             href="/contact"
-            className="ml-2 inline-flex text-black bg-gray-100 border-0 py-2 px-2 focus:outline-none hover:bg-gray-100 hover:text-white rounded-lg text-base"
+            className="ml-2 inline-flex text-black bg-gray-100 border-0 py-2 px-2 focus:outline-none hover:bg-gray-200 hover:text-white transition duration-700 ease-in-out rounded-lg text-base"
           >
             Send me a message
           </a>

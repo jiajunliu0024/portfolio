@@ -44,7 +44,6 @@ export default function About() {
             Hello, I am Jiajun Liu. A fullstack developer in Melbourne. Nice to
             meet you.
           </p>
-
           <div className="w-full flex lg:justify-start md:justify-center sm:justify-center">
             <a
               href="#schedule"
