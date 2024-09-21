@@ -1,9 +1,12 @@
-# Getting Started with Create React App
+# Getting Started with porfolio app
 
 This project was React with [Create React App](https://github.com/facebook/create-react-app).
 
 # Project Website
 https://jiajun.com.au
+
+## Update it for your personal porfolio
+From the data.js file, update the image and your personal info.
 
 ## Available Scripts
 
