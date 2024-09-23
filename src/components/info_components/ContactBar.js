@@ -1,9 +1,10 @@
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaBasketball } from "react-icons/fa6";
 import { personInfo } from "../../data";
+import { MdEmail } from "react-icons/md";
+import SendEmailLink from "./SendEmailLink";
 
 export default function ContactBar() {
   return (
@@ -18,9 +19,11 @@ export default function ContactBar() {
         <a href={personInfo.hobby}>
           <FaBasketball className="size-8 md:size-6 text-neutral-500 hover:text-black" />
         </a>
-        <a href={personInfo.hobby}>
-          <MdEmail className="size-8 md:size-6 text-neutral-500 hover:text-black" />
-        </a>
+        <SendEmailLink
+          mailElements={
+            <MdEmail className="size-8 md:size-6 text-neutral-500 hover:text-black" />
+          }
+        />
         <a href={personInfo.whatsApp}>
           <IoLogoWhatsapp className="size-8 md:size-6 text-neutral-500 hover:text-black" />
         </a>

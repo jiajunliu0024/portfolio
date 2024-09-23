@@ -1,8 +1,18 @@
 import React from "react";
 import { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
+import SendEmailLink from "./info_components/SendEmailLink";
 
 const BlogEventSchedule = () => {
+  const email = "jiajunliu0024@gmail.com";
+  const subject = "Subject of the Email";
+  const body = "Hello,\n\n Let's have a talk.\n\nBest regards!";
+
+  // Construct the mailto link
+  const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
+    subject
+  )}&body=${encodeURIComponent(body)}`;
+
   useEffect(() => {
     (async function () {
       const cal = await getCalApi({ namespace: "15min" });
@@ -34,7 +44,7 @@ const BlogEventSchedule = () => {
             Schedule a Meeting
           </button>
           <a
-            href="/contact"
+            href={mailtoLink}
             className="ml-2 inline-flex text-black bg-gray-100 border-0 py-2 px-2 focus:outline-none hover:bg-gray-200 hover:text-white transition duration-700 ease-in-out rounded-lg text-base"
           >
             Send me a message
