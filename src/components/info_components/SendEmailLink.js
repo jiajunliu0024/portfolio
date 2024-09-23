@@ -8,9 +8,5 @@ export default function SendEmailLink({ mailElements }) {
     subject
   )}&body=${encodeURIComponent(body)}`;
 
-  return (
-    <a href={mailtoLink}>
-      <mailElements />
-    </a>
-  );
+  return <a href={mailtoLink}>{mailElements}</a>;
 }

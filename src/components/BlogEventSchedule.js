@@ -1,7 +1,6 @@
 import React from "react";
 import { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
-import SendEmailLink from "./info_components/SendEmailLink";
 
 const BlogEventSchedule = () => {
   const email = "jiajunliu0024@gmail.com";
