@@ -43,7 +43,7 @@ export const projects = [
     title: "Voice Cloning",
     subtitle: "React and Node Js",
     description: "A tool can simulate your voice for any texts",
-    image: vocieMagic,
+    image: voiceMagic,
     link: "/coming-soon", // coming soon
   },
 ];
