@@ -1,6 +1,6 @@
 import petrolMap from "./components/images/petrol-map.gif";
 import yepai from "./components/images/yep-ai.gif";
-import voice2text from "./components/images/voice-2-text.gif";
+import voiceMagic from "./components/images/voice-magic.gif";
 import digitalRefrige from "./components/images/digital-refrige.gif";
 import kenImg from "./components/images/ken.jpeg";
 import mengImg from "./components/images/meng.jpeg";
@@ -43,7 +43,7 @@ export const projects = [
     title: "Voice Cloning",
     subtitle: "React and Node Js",
     description: "A tool can simulate your voice for any texts",
-    image: voice2text,
+    image: vocieMagic,
     link: "/coming-soon", // coming soon
   },
 ];
