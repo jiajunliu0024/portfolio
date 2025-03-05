@@ -2,6 +2,7 @@
 import React from "react";
 import MenuButton from "./MenuButton";
 import Marquee from "react-fast-marquee";
+import PropTypes from "prop-types";
 
 export default function BlogHeader({ hidden }) {
   return (
@@ -27,3 +28,7 @@ export default function BlogHeader({ hidden }) {
     </header>
   );
 }
+
+BlogHeader.propTypes = {
+  hidden: PropTypes.bool,
+};

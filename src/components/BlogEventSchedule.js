@@ -1,6 +1,7 @@
 import React from "react";
 import { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
+import { useCalendar } from "../hooks/useCalendar";
 
 const BlogEventSchedule = () => {
   const email = "jiajunliu0024@gmail.com";
@@ -12,16 +13,8 @@ const BlogEventSchedule = () => {
     subject
   )}&body=${encodeURIComponent(body)}`;
 
-  useEffect(() => {
-    (async function () {
-      const cal = await getCalApi({ namespace: "15min" });
-      cal("ui", {
-        styles: { branding: { brandColor: "#000000" } },
-        hideEventTypeDetails: false,
-        layout: "month_view",
-      });
-    })();
-  }, []);
+  useCalendar("15min");
+
   return (
     <div id="schedule" className="flex flex-col w-full h-auto items-center">
       <div className="flex flex-col mb-20 w-3/4 h-[400px] rounded-lg items-center bg-gray-50">
