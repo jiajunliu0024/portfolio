@@ -24,27 +24,34 @@ export default function About() {
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-black">
             Hi, I'm Jiajun.
           </h1>
-          <TypeAnimation
-            sequence={[
-              "I am a software developer",
-              1000,
-              "I am a team player",
-              1000,
-              "I am passionate about coding",
-              1000,
-              "I love helping people bring their dreams to life",
-              1000,
-            ]}
-            wrapper="span"
-            speed={50}
-            style={{ fontSize: "32px", display: "inline-block" }}
-            repeat={Infinity}
-          />
-          <p className="mb-8 text-gray-400 leading-relaxed">
+          <div className="h-[50px] mb-8">
+            <TypeAnimation
+              sequence={[
+                "I am a software developer",
+                1000,
+                "I am a team player",
+                1000,
+                "I am passionate about coding",
+                1000,
+                "I love helping people bring their dreams to life",
+                1000,
+              ]}
+              wrapper="span"
+              speed={50}
+              style={{
+                fontSize: "32px",
+                display: "inline-block",
+                minHeight: "50px",
+                lineHeight: "50px",
+              }}
+              repeat={Infinity}
+            />
+          </div>
+          <p className="text-gray-400 leading-relaxed mt-4">
             Hello, I am Jiajun Liu. A fullstack developer in Melbourne. Nice to
             meet you.
           </p>
-          <div className="w-full flex lg:justify-start md:justify-center sm:justify-center">
+          <div className="w-full flex lg:justify-start md:justify-center sm:justify-center mt-8">
             <a
               href="#schedule"
               className="inline-flex text-white bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-base"
