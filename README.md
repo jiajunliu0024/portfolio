@@ -1,4 +1,4 @@
-# Getting Started with porfolio app
+# Getting Started with portfolio app
 
 This project was React with [Create React App](https://github.com/facebook/create-react-app).
 
