@@ -1,29 +1,33 @@
-// src/components/Navbar.js
 import React from "react";
-import MenuButton from "./MenuButton";
-import Marquee from "react-fast-marquee";
 
-export default function BlogHeader({ hidden }) {
+export default function BlogHeader() {
+  const links = [
+    ["Work", "#projects"],
+    ["Experience", "#experience"],
+    ["Skills", "#skills"],
+    ["Contact", "#schedule"],
+  ];
+
   return (
-    <header id="head" className="bg-white">
-      <div className="container mx-auto flex justify-between items-center p-5 md:px-30 lg:px-40">
-        <div className="font-bold text-lg text-black">
-          <a href="/#about">Jiajun Liu</a>
-        </div>
-        <div className="w-1/2 flex h-16 items-center">
-          <Marquee className="bg-gray-100 h-10 items-center rounded-full hover:bg-gray-200 hover:h-14 transition-all duration-300 ease-in-out">
-            <div className="flex items-center">
-              <div className="h-3 w-3 bg-green-400 rounded-full"></div>
-              <div className="h-3 w-3 bg-green-400 rounded-full absolute animate-ping"></div>
-              <span className="ml-2">Available for new positions</span>
-            </div>
-          </Marquee>
+    <header className="site-shell glass-nav">
+      <nav className="flex items-center justify-between gap-4 px-5 py-3">
+        <a href="/#about" className="text-sm font-extrabold text-neutral-950">
+          Jiajun Liu
+        </a>
+
+        <div className="hidden items-center gap-6 md:flex">
+          {links.map(([label, href]) => (
+            <a key={label} href={href} className="nav-link">
+              {label}
+            </a>
+          ))}
         </div>
 
-        <div hidden={hidden} className="flex items-center space-x-4">
-          <MenuButton />
-        </div>
-      </div>
+        <a href="#schedule" className="availability-pill">
+          <span className="pulse-dot" />
+          Available
+        </a>
+      </nav>
     </header>
   );
 }

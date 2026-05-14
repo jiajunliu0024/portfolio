@@ -1,13 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { getCalApi } from "@calcom/embed-react";
-import { useEffect } from "react";
 
 const BlogEventSchedule = () => {
   const email = "jiajunliu0024@gmail.com";
-  const subject = "Subject of the Email";
-  const body = "Hello,\n\n Let's have a talk.\n\nBest regards!";
-
-  // Construct the mailto link
+  const subject = "Project chat";
+  const body = "Hello,\n\nLet's have a talk.\n\nBest regards!";
   const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
     subject
   )}&body=${encodeURIComponent(body)}`;
@@ -16,41 +13,42 @@ const BlogEventSchedule = () => {
     (async function () {
       const cal = await getCalApi({ namespace: "15min" });
       cal("ui", {
-        styles: { branding: { brandColor: "#000000" } },
+        styles: { branding: { brandColor: "#171717" } },
         hideEventTypeDetails: false,
         layout: "month_view",
       });
     })();
   }, []);
+
   return (
-    <div id="schedule" className="flex flex-col w-full h-auto items-center">
-      <div className="flex flex-col mb-20 w-3/4 h-[400px] rounded-lg items-center bg-gray-50">
-        <div className="flex flex-col items-center mt-20">
-          <p className="text-5xl font-weight:800 mt-10">
-            Let's Talk about your project
-          </p>
-          <p className="text-xl opacity-50 mt-5">
-            Any good ideas on your mind, let's have a chat
-          </p>
-        </div>
-        <div className="w-full space-x-4 mt-5 flex md:justify-center sm:justify-center">
-          <button
-            data-cal-namespace="15min"
-            data-cal-link="jiajun-liu/15min"
-            data-cal-config='{"layout":"month_view"}'
-            className="inline-flex text-white bg-gray-900 border-0 py-2 px-2 focus:outline-none hover:bg-white hover:text-black hover:scale-110 transition duration-700 ease-in-out rounded-lg text-base"
-          >
-            Schedule a Meeting
-          </button>
-          <a
-            href={mailtoLink}
-            className="ml-2 inline-flex text-black bg-gray-100 border-0 py-2 px-2 focus:outline-none hover:bg-gray-200 hover:text-white transition duration-700 ease-in-out rounded-lg text-base"
-          >
-            Send me a message
-          </a>
+    <section id="schedule" className="section-block">
+      <div className="site-shell">
+        <div className="cta-panel">
+          <div>
+            <p className="eyebrow text-white/50">Start a project</p>
+            <h2>Have an idea worth making real?</h2>
+            <p>
+              I am open to product builds, AI features, automation work, and
+              software roles where clean execution matters.
+            </p>
+          </div>
+
+          <div className="cta-actions">
+            <button
+              data-cal-namespace="15min"
+              data-cal-link="jiajun-liu/15min"
+              data-cal-config='{"layout":"month_view"}'
+              className="button-primary bg-white text-neutral-950"
+            >
+              Schedule a Meeting
+            </button>
+            <a href={mailtoLink} className="button-secondary">
+              Send a Message
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

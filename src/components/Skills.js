@@ -1,34 +1,31 @@
-// src/components/Skills.js
-
-import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
 import React from "react";
 import { skills } from "../data";
 
 export default function Skills() {
+  const extendedSkills = [...new Set([...skills, "Python", "AWS", "Kubernetes", "PostgreSQL"])];
+
   return (
-    <section id="skills" className=" text-black bg-white-900 body-font">
-      <div className="container px-5 py-10 mx-auto">
-        <div className="text-center mb-20">
-          <ChipIcon className="w-10 inline-block mb-4" />
-          <h1 className="sm:text-4xl text-3xl font-medium title-font text-black mb-4">
-            Skills &amp; Technologies
-          </h1>
-          <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-            "I have practical work experience in both Front-end and Back-end
-            development, with expertise in Java, C#, and JavaScript."
+    <section id="skills" className="section-block">
+      <div className="site-shell">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">Stack</p>
+            <h2 className="section-title">Tools I use to turn ideas into shipped products.</h2>
+          </div>
+          <p className="section-note">
+            Frontend polish, backend reliability, and AI implementation in one
+            working loop.
           </p>
         </div>
-        <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
-          {skills.map((skill) => (
-            <div key={skill} className="p-2 sm:w-1/2 w-full">
-              <div className="bg-gray-700 rounded flex p-4 h-full items-center">
-                <BadgeCheckIcon className="text-white w-6 h-6 flex-shrink-0 mr-4" />
-                <span className="title-font font-medium text-white">
-                  {skill}
-                </span>
-              </div>
-            </div>
-          ))}
+
+        <div className="clean-card p-5 md:p-7">
+          <div className="skill-wrap">
+            {extendedSkills.map((skill) => (
+              <span key={skill} className="skill-chip">
+                {skill}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </section>

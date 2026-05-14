@@ -1,7 +1,5 @@
 import petrolMap from "./components/images/petrol-map.gif";
 import yepai from "./components/images/yep-ai.gif";
-import voice2text from "./components/images/voice-2-text.gif";
-import digitalRefrige from "./components/images/digital-refrige.gif";
 import kenImg from "./components/images/ken.jpeg";
 import mengImg from "./components/images/meng.jpeg";
 import nortonImg from "./components/images/norton.jpeg";
@@ -33,18 +31,20 @@ export const projects = [
     link: "https://petrol-co.com",
   },
   {
-    title: "Digital Refridge",
-    subtitle: "Java and FireBase",
-    description: "An Android app will help users manage food expiration dates",
-    image: digitalRefrige,
+    title: "AI Resume Tailor",
+    subtitle: "AI and Automation",
+    description: "A tool can tailor your resume for different job applications",
+    video: `${process.env.PUBLIC_URL}/videos/ai-resume-tailor.mp4`,
+    poster: `${process.env.PUBLIC_URL}/images/ai-resume-tailor-poster.jpg`,
     link: "https://github.com/jiajunliu0024/DigitalRefrige",
   },
   {
-    title: "Voice Cloning",
-    subtitle: "React and Node Js",
-    description: "A tool can simulate your voice for any texts",
-    image: voice2text,
-    link: "/coming-soon", // coming soon
+    title: "3D Car Configurator",
+    subtitle: "React and Three.js",
+    description: "A tool can change your car paint in 3D",
+    video: `${process.env.PUBLIC_URL}/videos/3d-car-configurator.mp4`,
+    poster: `${process.env.PUBLIC_URL}/images/3d-car-configurator-poster.jpg`,
+    link: "/coming-soon",
   },
 ];
 
@@ -177,20 +177,50 @@ export const experience = [
     },
   },
   {
-    period: "2024.6-Present",
+    period: "2024.05-2024.10",
     name: "YepAI",
-    major: "Software Developer",
+    major: "Application Developer",
     image: "./components/images/py.jpg",
     description: [
-      "Integrated the YepAI management system with a third-party email provider for enhanced communication",
-      "Deployed AWS Lambda functions to manage sign-in and sign-up requests on the YepAI website, ensuring efficient user authentication",
-      "Managed and analyzed user data within YepAI, leveraging insights for reporting and strategic decision-making",
-      "Developed a text-to-voice generation model using Python and AWS, applied to digital humans",
+      "Researched and implemented a voice cloning model, deploying it as a FastAPI microservice on AWS",
+      "Used AWS Load Balancer to support scalable and reliable text-to-speech services for 600+ clients",
+      "Deployed AWS Lambda functions for sign-in, sign-up, and password recovery on the YepAI website",
+      "Integrated AWS Cognito and a third-party email provider for user management and communication",
     ],
     detail: {
       type: "Skills",
       desc: "Projects completed at YepAI",
-      subjects: ["Project Management", "Internship"],
+      subjects: ["FastAPI", "AWS Lambda", "AWS Cognito", "Load Balancer"],
+      img: {
+        degree: "",
+        ahegs: "",
+      },
+    },
+  },
+  {
+    period: "2024.10-Present",
+    name: "SITA",
+    major: "IT Operations Engineer",
+    image: "",
+    description: [
+      "Provided field operations support for airport IT equipment and services, including kiosks, bag-drop machines, PCs, printers, and related devices",
+      "Performed onsite interventions, troubleshooting, local repairs, and preventive maintenance in line with customer contracts and SLAs",
+      "Developed and maintained a scheduling system integrating applications from 20 airlines, supporting daily operations for 10,000+ passengers",
+      "Participated in the development of a real-time machine health detection system with live web-based GUI status updates",
+      "Managed Windows servers and domain, Linux systems, SQL databases, and LAN networks",
+      "Coordinated with resolver groups as customer SPOC and ensured accurate reporting in the SITA Service Hub",
+    ],
+    detail: {
+      type: "Skills",
+      desc: "Projects and operations completed at SITA",
+      subjects: [
+        "Field Operations",
+        "Windows Server",
+        "Linux",
+        "SQL",
+        "LAN Networks",
+        "Web GUI",
+      ],
       img: {
         degree: "",
         ahegs: "",
