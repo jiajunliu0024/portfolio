@@ -1,10 +1,5 @@
 import petrolMap from "./components/images/petrol-map.gif";
 import yepai from "./components/images/yep-ai.gif";
-import kenImg from "./components/images/ken.jpeg";
-import mengImg from "./components/images/meng.jpeg";
-import nortonImg from "./components/images/norton.jpeg";
-import andersonImg from "./components/images/anderson.jpeg";
-
 export const personInfo = {
   linkedin: "https://www.linkedin.com/in/jiajun-liu-8a9b681b4/",
   github: "https://github.com/jiajunliu0024",
@@ -35,7 +30,7 @@ export const projects = [
     subtitle: "AI and Automation",
     description: "A tool can tailor your resume for different job applications",
     image: `${process.env.PUBLIC_URL}/images/ai-resume-tailor.gif`,
-    link: "https://github.com/jiajunliu0024/DigitalRefrige",
+    link: "https://www.youtube.com/watch?v=Zf2nVQ19rdY",
   },
   {
     title: "3D Car Configurator",
@@ -49,28 +44,28 @@ export const projects = [
 export const comments = [
   {
     text: "Jiajun is a talented developer with a strong work ethic. He is always willing to go the extra mile to ensure that his projects are completed on time and to the highest standard. I would highly recommend him to anyone looking for a skilled software engineer.",
-    image: nortonImg,
+    image: `${process.env.PUBLIC_URL}/images/testimonials/norton.jpeg`,
     name: "Norton Wei",
     company: "Huawei Pty Ltd",
     link: "https://www.linkedin.com/in/wenzhou-wei-535060aa/",
   },
   {
     text: "Working with Jiajun has been an absolute pleasure. His dedication to delivering high-quality work is commendable. Jiajun's expertise in development coupled with his proactive approach in staying updated with industry advancements makes him a valuable asset to any project. Looking forward to collaborating with him again!",
-    image: kenImg,
+    image: `${process.env.PUBLIC_URL}/images/testimonials/ken.jpeg`,
     name: "ken vilaysane",
     company: "NAB",
     link: "https://www.linkedin.com/in/ken-vilaysane/",
   },
   {
     text: "A highly skilled developer, Jiajun combines technical expertise with a strong sense of responsibility. He consistently delivers high-quality work, even under tight deadlines. His dedication and reliability make him an excellent choice for any team seeking a talented software engineer",
-    image: mengImg,
+    image: `${process.env.PUBLIC_URL}/images/testimonials/meng.jpeg`,
     name: "Meng Chen",
     company: "JD.COM",
     link: "https://www.linkedin.com/in/meng-chen-50547a3a//",
   },
   {
     text: "Jiajun is a talented developer with a strong work ethic. He is always willing to go the extra mile to ensure that his projects are completed on time and to the highest standard. I would highly recommend him to anyone looking for a skilled software engineer.",
-    image: andersonImg,
+    image: `${process.env.PUBLIC_URL}/images/testimonials/anderson.jpeg`,
     name: "Anderson",
     company: "YepAI",
     link: "https://www.linkedin.com/in/un-leng-kam-a28582269/",
