@@ -20,19 +20,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <a key={project.title} className="project-card" href={project.link}>
               <div className="project-media">
-                {project.video ? (
-                  <video
-                    aria-label={`${project.title} preview`}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    poster={project.poster}
-                    src={project.video}
-                  />
-                ) : (
-                  <img alt={`${project.title} preview`} src={project.image} />
-                )}
+                <img alt={`${project.title} preview`} src={project.image} />
               </div>
               <div className="project-body">
                 <div className="project-topline">

@@ -34,16 +34,14 @@ export const projects = [
     title: "AI Resume Tailor",
     subtitle: "AI and Automation",
     description: "A tool can tailor your resume for different job applications",
-    video: `${process.env.PUBLIC_URL}/videos/ai-resume-tailor.mp4`,
-    poster: `${process.env.PUBLIC_URL}/images/ai-resume-tailor-poster.jpg`,
+    image: `${process.env.PUBLIC_URL}/images/ai-resume-tailor.gif`,
     link: "https://github.com/jiajunliu0024/DigitalRefrige",
   },
   {
     title: "3D Car Configurator",
     subtitle: "React and Three.js",
     description: "A tool can change your car paint in 3D",
-    video: `${process.env.PUBLIC_URL}/videos/3d-car-configurator.mp4`,
-    poster: `${process.env.PUBLIC_URL}/images/3d-car-configurator-poster.jpg`,
+    image: `${process.env.PUBLIC_URL}/images/3d-car-configurator.gif`,
     link: "https://car-configurator.jiajunliu0024.workers.dev/",
   },
 ];
