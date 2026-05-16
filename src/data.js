@@ -30,7 +30,7 @@ export const projects = [
     subtitle: "AI and Automation",
     description: "A tool can tailor your resume for different job applications",
     image: `${process.env.PUBLIC_URL}/images/ai-resume-tailor.gif`,
-    link: "https://www.youtube.com/watch?v=Zf2nVQ19rdY",
+    link: "https://chromewebstore.google.com/detail/resume-tailor/dcojgdkfagbfbeakmblnnhbgfjibihli?authuser=0&hl=en",
   },
   {
     title: "3D Car Configurator",
